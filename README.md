@@ -1,37 +1,39 @@
-# rui-doc
+# RuiChain文档
 
-#### 介绍
-rui-doc
+## RuiChain简介
 
-#### 软件架构
-软件架构说明
+RuiChain是一条公有链，是RuiChain数据交易所的底层区块链，不仅支撑着RuiChain的高频数据交易，还支持第三方开发应用，在RuiChain上开发应用不仅可以得到链上支持，还可以获得RuiChain多维度数据的对接，可以做出非常落地于民生的有价值应用。
 
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+RuiChain主网已于2018年6月上线.
 
 
-#### 码云特技
+## RuiChain技术文档
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 快速开始
+* [RuiChain构成](introduction.md)
+* [编译安装](node/install.md)
+* [搭建私链](node/private-chain.md)
+* [轻钱包](node/cli_wallet.md)
+* [witness_node参数介绍](node/cmd/witness_node.md)
+* [cli_wallet参数介绍](node/cmd/cli_wallet.md)
+
+### 区块浏览器
+* [安装运行](wallet/install.md)
+* [账户注册](wallet/register.md)
+
+### 智能合约开发
+* [简介](contract/introduction.md)
+* [快速开始](contract/quick_start.md)
+* [智能合约示例](contract/examples.md)
+
+### 测试网络
+* [测试网络](testnet/introduction.md)
+
+### 开发者参考
+* [api调用逻辑](node/api/introduction.md)
+* [api调用格式](node/api/format.md)
+* [链api](node/api/witness_node.md)
+* [钱包api](node/api/cli_wallet.md)
+* [水龙头api](node/api/faucet.md)
+* [api开发示例](node/api/develop.md)
+* [智能合约 api 介绍](contract/contract-api.md)
