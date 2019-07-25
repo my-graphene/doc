@@ -1,16 +1,16 @@
-# RuiChain document
+# MyGrapheneChain document
 
-## RuiChain introduction
+## MyGrapheneChain introduction
 
-RuiChain is a public chain, which is the basement blockchain of the RuiChain data exchange, supports not only the data transaction on RuiChain in high frequency, but also the application development by the third party. Developing applications can get not only the support on the chain, but also the coordination of RuiChain data in multiple dimmesions, which can help to develop valuable applications for people's life.
+MyGrapheneChain is a public chain, which is the basement blockchain of the MyGrapheneChain data exchange, supports not only the data transaction on MyGrapheneChain in high frequency, but also the application development by the third party. Developing applications can get not only the support on the chain, but also the coordination of MyGrapheneChain data in multiple dimmesions, which can help to develop valuable applications for people's life.
 
-RuiChain main net has been launched since June 2018.
+MyGrapheneChain main net has been launched since June 2018.
 
 
-## RuiChain Technical document
+## MyGrapheneChain Technical document
 
 ### Quick start
-* [RuiChain composition](introduction-en.md)
+* [MyGrapheneChain composition](introduction-en.md)
 * [Compilation installment](node/install-en.md)
 * [Establilsh private chain](node/private-chain-en.md)
 * [Light weighted wallet](node/cli_wallet-en.md)

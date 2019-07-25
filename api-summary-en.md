@@ -1,6 +1,6 @@
 # API introduction
 
-There are two types of RuiChain APIs: Cli-wallet API, Witness API.
+There are two types of MyGrapheneChain APIs: Cli-wallet API, Witness API.
 
 To learn more about Cli-wallet API, please click [Here](/api/cli-wallet-api.md).
 

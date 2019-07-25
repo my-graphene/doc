@@ -1,5 +1,5 @@
 # Consensus mechanism introduction
 
-## Consensus mechanism of RuiChain
+## Consensus mechanism of MyGrapheneChain
 
-Consensus algebra of RuiChain is Data Delegated Proof of Stake (DDPoS).
+Consensus algebra of MyGrapheneChain is Data Delegated Proof of Stake (DDPoS).

@@ -1,6 +1,6 @@
 ## Smart contract introduction
 
-RuiChain smart contract 2.0，WebAssembly virtual machine as the basement technology and currently supporting the smart contract compiling in C++ language.
+MyGrapheneChain smart contract 2.0，WebAssembly virtual machine as the basement technology and currently supporting the smart contract compiling in C++ language.
 Developers compile smart contracts in C++ language, convert the code to WebAssembly (WASM) by llvm then deploy it on the blockchain, finally realizes interaction through smart contract ABI (Application Binary Interface).
 
 # Contract account design

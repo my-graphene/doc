@@ -1,16 +1,16 @@
-# RuiChain构成
+# MyGrapheneChain构成
 
-RuiChain主要有`rui-core`、`rui-ui`、`rui-faucet`三大部分组成：
+MyGrapheneChain主要有`rui-core`、`rui-ui`、`rui-faucet`三大部分组成：
 
 ![](rui-core.png)
 
 ## <b>rui-core</b>
 
-RuiChain公链，基于石墨烯技术，基于C++开发。
+MyGrapheneChain公链，基于石墨烯技术，基于C++开发。
 
 rui-core主要由`链核心模块`和`命令行钱包`程序组成。
 
-- `链核心模块` —— 全节点，即witness_node程序， 通过 P2P 方式连接到RuiChain网络，从网络接收最新区块，向网络广播本地签署的交易包。[witness_node 参数介绍](node/cmd/witness_node.md) 
+- `链核心模块` —— 全节点，即witness_node程序， 通过 P2P 方式连接到MyGrapheneChain网络，从网络接收最新区块，向网络广播本地签署的交易包。[witness_node 参数介绍](node/cmd/witness_node.md) 
 <br>
 - `命令行钱包` —— 即cli_wallet程序， 通过 websocket 方式连接到 witness_node， 管理钱包文件； 提供交易签名功能，签名后通过 witness_node 向外广播； 通过 http rpc 的方式提供 API 供其他程序调用。[cli_wallet 参数介绍](node/cmd/cli_wallet.md)
 

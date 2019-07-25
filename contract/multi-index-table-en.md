@@ -1,4 +1,4 @@
-RuiChain smart contract database operation
+MyGrapheneChain smart contract database operation
 
 ---------------
 

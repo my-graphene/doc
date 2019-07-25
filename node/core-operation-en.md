@@ -1,4 +1,4 @@
-RuiChain contains an operation system, among which each operation has its corresponding serial number, it can be determined what operations are included in a block based on the serial number. For example block [1769028](https://block.rui.io/#/block/1769028) contains a transfer transaction and number 0 corresponds to the transfer operation. The matching relationship between the serial number and operation could be refered [here](https://github.com/rui-coin/rui-core/wiki/operations_introduction).
+MyGrapheneChain contains an operation system, among which each operation has its corresponding serial number, it can be determined what operations are included in a block based on the serial number. For example block [1769028](https://block.rui.io/#/block/1769028) contains a transfer transaction and number 0 corresponds to the transfer operation. The matching relationship between the serial number and operation could be refered [here](https://github.com/rui-coin/rui-core/wiki/operations_introduction).
 
 The meaning of each operation is as follows：
 

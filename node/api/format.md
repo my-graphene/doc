@@ -1,6 +1,6 @@
 # api rpc 格式
 
-RuiChain所有api的rpc调用都采用通用的jsonrpc2.0标准格式，jsonrpc2.0标准请查阅[jsonrpc2.0.pdf](jsonrpc2.0.pdf)。
+MyGrapheneChain所有api的rpc调用都采用通用的jsonrpc2.0标准格式，jsonrpc2.0标准请查阅[jsonrpc2.0.pdf](jsonrpc2.0.pdf)。
 
 ## 1. 调用主体有两种格式
 

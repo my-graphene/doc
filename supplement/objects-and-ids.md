@@ -1,10 +1,10 @@
 # 对象和ID
 
-与众多加密货币钱包相比，RuiChain展示的RuiChain、交易和账户的模型都大不相同。
+与众多加密货币钱包相比，MyGrapheneChain展示的MyGrapheneChain、交易和账户的模型都大不相同。
 
 ## 对象
 
-对象在RuiChain中并没有地址，但这些对象能够与相应识别码一一对应。
+对象在MyGrapheneChain中并没有地址，但这些对象能够与相应识别码一一对应。
 
 | space.type.id |
 | :--- |

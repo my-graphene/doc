@@ -1,7 +1,7 @@
 
 ### 3. 启动见证节点witness_node， 同步数据
 
-进入节点目录，启动RuiChain见证节点witness_node
+进入节点目录，启动MyGrapheneChain见证节点witness_node
 
 ```
 # 可以使用2个参数，节省内存： --track-account 和 --partial-operations=true
@@ -81,7 +81,7 @@ info
 
 ### 5. 使用命令行钱包cli_wallet, 导入帐户私钥
 
-如果你还没有帐户，需要先下载RuiChain轻钱包，或者访问在线钱包，注册帐号\(记得备份，保存好私钥\)。
+如果你还没有帐户，需要先下载MyGrapheneChain轻钱包，或者访问在线钱包，注册帐号\(记得备份，保存好私钥\)。
 
 
 
@@ -272,6 +272,6 @@ curl --data '{"jsonrpc": "2.0", "method": "get_dynamic_global_properties", "para
 9. ```
    curl --data '{"jsonrpc": "2.0", "method": "transfer2", "params": ["from_account", "to_account", "100.01", "RUI", "",  true], "id": 1}' http://127.0.0.1:38091/rpc
    ```
-10. RUI精度，为小数点后5位，即最小单位为0.00001 RUI。RuiChain中没有小数，数字在系统中被放大了10万倍，所以get_account_history / get_account_history_by_operations接口返回的数字，比如转帐的数量，需要除以10万，才是真正的数量。
+10. RUI精度，为小数点后5位，即最小单位为0.00001 RUI。MyGrapheneChain中没有小数，数字在系统中被放大了10万倍，所以get_account_history / get_account_history_by_operations接口返回的数字，比如转帐的数量，需要除以10万，才是真正的数量。
 11. 钱包状态为locked状态时只能查询，不能转帐，不能解密转帐备注。如果需要转帐或者查询交易历史，需要先unlock。
 12. **transfer/transfer2转帐时，第3个参数转帐数量如果包含小数，必须加双引号，否则转帐会失败。建议转帐数量统一加上双引号。**

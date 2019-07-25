@@ -1,10 +1,10 @@
 # Object and ID
 
-Compared to other cryptocurrency wallets, the model of RuiChain, transaction and account type shown on RuiChain is quite different.
+Compared to other cryptocurrency wallets, the model of MyGrapheneChain, transaction and account type shown on MyGrapheneChain is quite different.
 
 ## Object
 
-Objects do not have address on RuiChain, but they can match with corresponding identification code.
+Objects do not have address on MyGrapheneChain, but they can match with corresponding identification code.
 
 | space.type.id |
 | :--- |

@@ -1,6 +1,6 @@
 ### 3. Starting witness_node, synchronze data
 
-Enter node directory, start RuiChain witness_node
+Enter node directory, start MyGrapheneChain witness_node
 
 ```
 # 2 parameters could be used to save RAM occupation： --track-account and --partial-operations=true
@@ -80,7 +80,7 @@ info
 
 ### 5. Use command line wallet cli_wallet, import the private key of the account
 
-If you don't have any account, downlod RuiChain light weighted wallet first or access online wallet to register an account\(Remember to back it up，save your private key properly\).
+If you don't have any account, downlod MyGrapheneChain light weighted wallet first or access online wallet to register an account\(Remember to back it up，save your private key properly\).
 
 
 
@@ -271,6 +271,6 @@ Return：
 9. ```
    curl --data '{"jsonrpc": "2.0", "method": "transfer2", "params": ["from_account", "to_account", "100.01", "RUI", "",  true], "id": 1}' http://127.0.0.1:38091/rpc
    ```
-10. RUI accuracy, rounded to the 5 decimals, namely the smallest unit is 0.00001 RUI. There is no decimal on RuiChain, all numbers are multiplied with 100,000, so the number returned from get_account_history / get_account_history_by_operations interfaces, such as the transfer amount should be divided by 100,000 to get the real number.
+10. RUI accuracy, rounded to the 5 decimals, namely the smallest unit is 0.00001 RUI. There is no decimal on MyGrapheneChain, all numbers are multiplied with 100,000, so the number returned from get_account_history / get_account_history_by_operations interfaces, such as the transfer amount should be divided by 100,000 to get the real number.
 11. Only query functionality is available when the wallet status is locked while the transfer and transfer memo deciphering is not available. You need to unlock the wallet before transferring or querying the transaction history.
 12. **When transfer/transfer2 is processing the transfer, if the third parameter, namely the transfer amount, contains decimals, double quotation marks should be added, otherwise the transfer would fail. It is recommended that all transfer amounts added with double quotation marks.**

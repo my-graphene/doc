@@ -1,6 +1,6 @@
 # api rpc format
 
-All the rpc calling of RuiChainc api is in jsonrpc2.0 standard format, please refer to [jsonrpc2.0.pdf](jsonrpc2.0.pdf) for the jsonrpc2.0 standard format.
+All the rpc calling of MyGrapheneChainc api is in jsonrpc2.0 standard format, please refer to [jsonrpc2.0.pdf](jsonrpc2.0.pdf) for the jsonrpc2.0 standard format.
 
 ## 1. There are two formats for the calling subject
 

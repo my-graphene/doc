@@ -1,6 +1,5 @@
 # 钱包 api
 
-
 ## 钱包api
 
 | 命令 | 参数 | 参数 | 说明 |
@@ -25,37 +24,30 @@
 
 进行api调用前，请详读[api rpc格式](format.md)
 
-```
+```bash
 cli_wallet -w wallet.json -s ws://<ip>:<port1> -r <ip>:<port2> -H <ip>:<port3> --chain-id <...>
 ```
 
 * `-r <ip>:<port2>` 对外提供钱包rpc api服务，包括http和websocket服务。
 * `-H <ip>:<port3>` 对外提供钱包rpc api服务，它只包含http服务，跟<port2>的区别在于，对于它的返回值是http格式的json格式，其它都相同。
 
-
-
-
-
-
-### <port2> http+rpc
+### port2 http+rpc
 
 进入命令行，通过curl进行post请求调用
 
-```
+```bash
 curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,"method":"call","params":[0,"api指令",[参数]]}'
 或
 curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,"method":"api指令","params":[参数]}'
 ```
+
 即可看到返回结果。
 
-
-<b>具体请求URL为</b>
-
-`http://<ip>:<port2>`
-
+具体请求URL为 `http://<ip>:<port2>`
 
 eg.
-```
+
+```bash
 获取api帮助信息
 curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,"method":"help","params": []}'
 curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,"method":"call","params":[0,"help",[]]}'
@@ -77,29 +69,19 @@ curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,
 curl http://<ip>:<port2> -H "Content-Type:application/json" -X POST -d '{"id":1,"method":"call","params":[0,"register_account",["userx","pubkey","pubkey","root","root", 0, true]]}'
 ```
 
-
-
-
-
-
-
-### <port2> websocket+rpc
+### port2 websocket+rpc
 
 进入命令行，通过wscat进行请求调用，wscat安装方式`apt -y install node-ws`。
 
-```
+```bash
 wscat -c ws://<ip>:<port2>
 ```
 
-
-<b>具体请求URL为</b>
-
-`ws://<ip>:<port2>`
-
-
+具体请求URL为 `ws://<ip>:<port2>`
 
 eg.
-```
+
+```bash
 获取api帮助信息
 {"id":1,"method":"help","params": []}
 {"id":1,"method":"call","params":[0,"help",[]]}

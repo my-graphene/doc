@@ -21,12 +21,14 @@
 ## Calling case
 
 Command line wallet cli_wallet connects to witness_node:
-```
+
+```bash
 cli_wallet -w wallet.json -s ws://127.0.0.1:38090 -r 127.0.0.1:38091 --chain-id 6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
 ```
+
 First you need to set a password fot your wallet (This is a local password which is used to unlock the wallet)：
 
-```
+```bash
 new >>> set_password my_password
 ```
 
@@ -36,17 +38,20 @@ locked >>>
 ```
 
 Unlock the wallet:
-```
+
+```bash
 locked >>> unlock my_password
 ```
 
 It will show as follows when it is unlocked successfully：
-```
+
+```bash
 unlocked >>>
 ```
 
 You can find the synchronous status of the current block using info command
-```
+
+```json
 unlocked >>> info
 info
 {
@@ -85,12 +90,11 @@ info
 }
 ```
 
-
 ## jsonrpc calling case
 
 Enter command line（cmd），calling by curl
 
-```
+```bash
 curl --data '{"jsonrpc": "2.0", "method": "info", "params": [], "id": 1}' http://127.0.0.1:38091
 ```
 
@@ -98,24 +102,19 @@ It will show the return
 
 ### POST request case
 
-Request URL as follows
-
-```
-http://127.0.0.1:38091
-```
+Request URL as follows <http://127.0.0.1:38091>
 
 Requesting subjective
 
-```
+```bash
 {"jsonrpc": "2.0", "method": "info", "params": [], "id": 1}
 ```
 
 Note：The format of params is`[API type，API instruction，parameter]`
 
-
 Return
 
-```
+```json
 {
     "id":1,
     "jsonrpc":"2.0",

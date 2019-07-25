@@ -1,6 +1,6 @@
 # 创建资产
 
-1. #### 访问[RuiChain网页钱包](https://wallet.rui.io)，导入私钥
+1. #### 访问[MyGrapheneChain网页钱包](https://wallet.rui.io)，导入私钥
 2. #### 按下图创建资产
 
 #### ![](/assets/create_asset1.png)
