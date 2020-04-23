@@ -194,7 +194,7 @@ contract_call_operation
 
 
 3. 支持充值提现的transfer合约样例：
-https://github.com/rui-coin/rui-core/tree/dev_master/contracts/examples/transfer
+https://github.com/rui-coin/core/tree/dev_master/contracts/examples/transfer
 
 
 

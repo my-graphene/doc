@@ -1,4 +1,4 @@
-MyGrapheneChain智能合约数据库操作
+MyGChain智能合约数据库操作
 
 ---------------
 

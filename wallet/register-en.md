@@ -1,8 +1,8 @@
 # Register an account
-MyGrapheneChain used account model and registration referring mechanism, so to register an account on MyGrapheneChain, there are three key points:
+MyGChain used account model and registration referring mechanism, so to register an account on MyGChain, there are three key points:
 
 * Referrer，which is the existed account on the chain and will register an account by your account name and public key for you
-* Account name, which is unique on the chain, so please remember <b>`account name is the address`</b> on MyGrapheneChain.
+* Account name, which is unique on the chain, so please remember <b>`account name is the address`</b> on MyGChain.
 * ECC public key，starting with RUI, ECC public key in Base64 code.
 
 There are two methods to register an account:

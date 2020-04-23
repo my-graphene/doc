@@ -2,7 +2,7 @@
 Voting contract: record, find, delete the id, name and votes of candidates.
 
 # Contract code
-https://github.com/rui-coin/rui-core/blob/master/contracts/examples/voting/voting.cpp
+https://github.com/rui-coin/core/blob/master/contracts/examples/voting/voting.cpp
 
 # Compile the contract
 ```

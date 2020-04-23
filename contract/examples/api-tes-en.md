@@ -1,6 +1,6 @@
 # API testing case
 
-## 1. [Source code](https://github.com/rui-coin/rui-core/blob/contract/contracts/examples/apitest/apitest.cpp)
+## 1. [Source code](https://github.com/rui-coin/core/blob/contract/contracts/examples/apitest/apitest.cpp)
 
 
 The code is shown as follows:

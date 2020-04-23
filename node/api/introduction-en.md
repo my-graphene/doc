@@ -1,12 +1,12 @@
-# MyGrapheneChain api calling logic
-![](../../rui-core.png)
+# MyGChain api calling logic
+![](../../core.png)
 
-From the picture, MyGrapheneChain is primarily composed of `rui-core`、`rui-ui`、`rui-faucet` three parts, we will not focus on the basic introduction of these parts here, please refer to [MyGrapheneChain composition](../../introduction.md) for more details.
+From the picture, MyGChain is primarily composed of `core`、`ui`、`faucet` three parts, we will not focus on the basic introduction of these parts here, please refer to [MyGChain composition](../../introduction.md) for more details.
 
 From the picture, there are two basic api calling logics, namely `block browsing` and `account operation`.
 
 - As to calling `block browsing` related functionality, directly access the api interface of witness_node.
-- As to calling `account operation` related functionality, you need to access the api interface of the faucet；the faucet then accesses the api interface of cli_wallet, cli_wallet finally calls the api interface of witness_node. Please note the account registration in MyGrapheneChain system could be done by `Lifelong account`(please refer to [Establish private chain](../private-chain.md) for details ), one `Lifelong account` on the chain has been loaded to cli_wallet, therefore could provide account registrating service for faucet and web wallet. In addition, when registrating an account, it provides some commission for the new account.
+- As to calling `account operation` related functionality, you need to access the api interface of the faucet；the faucet then accesses the api interface of cli_wallet, cli_wallet finally calls the api interface of witness_node. Please note the account registration in MyGChain system could be done by `Lifelong account`(please refer to [Establish private chain](../private-chain.md) for details ), one `Lifelong account` on the chain has been loaded to cli_wallet, therefore could provide account registrating service for faucet and web wallet. In addition, when registrating an account, it provides some commission for the new account.
 
 
 Thus, we can divide api into three types, namely `Chain api` of the witness_node, `Wallet api` of the cli_wallet and `Faucet api` of the faucet.

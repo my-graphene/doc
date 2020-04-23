@@ -2,10 +2,10 @@
 
 #### Download the newest version of witness_node program, downloading address
 
-**The program might be updated, please**[**click here**](https://github.com/rui-coin/rui-core/releases/latest)**download the newest program**
+**The program might be updated, please**[**click here**](https://github.com/rui-coin/core/releases/latest)**download the newest program**
 
 | :--- | :--- |
-| github | [https://github.com/rui-coin/rui-core/releases/download/1.0.180604/rui_1.0.180604.tar.gz](https://github.com/rui-coin/rui-core/releases/download/1.0.180604/rui_1.0.180604.tar.gz) |
+| github | [https://github.com/rui-coin/core/releases/download/1.0.180604/rui_1.0.180604.tar.gz](https://github.com/rui-coin/core/releases/download/1.0.180604/rui_1.0.180604.tar.gz) |
 
 #### Start witness_node program, designate the block height and snapshot file path in the initiating parameter
 
@@ -49,6 +49,6 @@ If the designated block height is smaller than the newest block height, namely t
 {"id":"2.16.2","accumulated_fba_fees":0,"designated_asset":"1.3.743"}
 ```
 
-Among the above json files, every line is a json, among which id is the object id, 1.25.x is the loyalty plan balance object, 2.5.x is the balance object; Refer to [here](https://github.com/rui-coin/rui-core/wiki/Objects-and-IDS) for object ID files
+Among the above json files, every line is a json, among which id is the object id, 1.25.x is the loyalty plan balance object, 2.5.x is the balance object; Refer to [here](https://github.com/rui-coin/core/wiki/Objects-and-IDS) for object ID files
 
 If you want to parse RUI balance of the account, you need to parse 1.25.x and 2.5.x, and 1.3.1 of the asset_id, owner as the account the balance belongs to.

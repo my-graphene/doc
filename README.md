@@ -1,16 +1,16 @@
-# MyGrapheneChain文档
+# MyGChain文档
 
-## MyGrapheneChain简介
+## MyGChain简介
 
-MyGrapheneChain是一条公有链，是MyGrapheneChain数据交易所的底层区块链，不仅支撑着MyGrapheneChain的高频数据交易，还支持第三方开发应用，在MyGrapheneChain上开发应用不仅可以得到链上支持，还可以获得MyGrapheneChain多维度数据的对接，可以做出非常落地于民生的有价值应用。
+MyGChain是一条公有链，是MyGChain数据交易所的底层区块链，不仅支撑着MyGChain的高频数据交易，还支持第三方开发应用，在MyGChain上开发应用不仅可以得到链上支持，还可以获得MyGChain多维度数据的对接，可以做出非常落地于民生的有价值应用。
 
-MyGrapheneChain主网已于2018年6月上线.
+MyGChain主网已于2018年6月上线.
 
-## MyGrapheneChain技术文档
+## MyGChain技术文档
 
 ### 快速开始
 
-- [MyGrapheneChain构成](introduction.md)
+- [MyGChain构成](introduction.md)
 - [编译安装](node/install.md)
 - [搭建私链](node/private-chain.md)
 - [轻钱包](node/cli_wallet.md)

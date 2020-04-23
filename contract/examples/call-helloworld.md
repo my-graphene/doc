@@ -1,6 +1,6 @@
 # 这个合约用来调用helloworld的hi方法
 
-## 1. [源代码](https://github.com/rui-coin/rui-core/blob/contract/contracts/examples/call-helloworld/call-helloworld.cpp)
+## 1. [源代码](https://github.com/rui-coin/core/blob/contract/contracts/examples/call-helloworld/call-helloworld.cpp)
 
 代码如下:
 ```

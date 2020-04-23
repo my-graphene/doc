@@ -10,7 +10,7 @@ When running full-node client, you need to wait until data of all blocks has bee
 
 ---
 
-The wallet is used to store the asset issued on the chain. Meanwhile, the wallet is also the client of MyGrapheneChain decentralized exchange where you can find the real time transactions in the exchange and listed data type.
+The wallet is used to store the asset issued on the chain. Meanwhile, the wallet is also the client of MyGChain decentralized exchange where you can find the real time transactions in the exchange and listed data type.
 
 Wallet file：Wallet file（suffix is .bin）could be regarded as the key to the account, similar to your bank cards. You need to unlock your account by your wallet file and password. If your wallet file is broken or you forget your password, you are not able to unlock your wallet. **So please back up your wallet file and password carefully**.
 
@@ -18,9 +18,9 @@ Wallet file：Wallet file（suffix is .bin）could be regarded as the key to the
 
 ---
 
-As the carrier to store the asset issued on MyGrapheneChain, account is similar to your bank account.
+As the carrier to store the asset issued on MyGChain, account is similar to your bank account.
 
-1、Address：Asset account on MyGrapheneChain, which can be used for asset transferring and transaction on the chain.
+1、Address：Asset account on MyGChain, which can be used for asset transferring and transaction on the chain.
 
 2、Address type：//Address type instruction（Common account address, smart contract address）
 
@@ -97,7 +97,7 @@ Please remember after creating the account successfully, keep your **Wallet file
 
 ---
 
-The downloading address of MyGrapheneChain client is：[https://www.rui.io](https://www.rui.io)，go to the page，scroll down the page to 【Download】page, select the corresponding client to download：
+The downloading address of MyGChain client is：[https://www.rui.io](https://www.rui.io)，go to the page，scroll down the page to 【Download】page, select the corresponding client to download：
 
 ![](/assets/download.jpg)
 
@@ -243,7 +243,7 @@ Based on the case above, if account zhangsan113 wants to charge 0.5RUI to the pl
 
 ---
 
-//Issue asset on MyGrapheneChain
+//Issue asset on MyGChain
 
 ### Distribute asset
 
@@ -263,15 +263,15 @@ Voting functionality is needed to be updated（Not opened yet）
 
 ---
 
-Apply to be a merchant, acquire the permission to trade your data in MyGrapheneChain data exchange.
+Apply to be a merchant, acquire the permission to trade your data in MyGChain data exchange.
 
-Please refer to [MyGrapheneChain](/rui-ui.md) for detailed methods.
+Please refer to [MyGChain](/ui.md) for detailed methods.
 
 ### Loyalty plan
 
 ---
 
-Loyalty plan, aiming to encourage RUI holders to hold RUI in the long term. Participants are required to lock certain amount of RUI for a stipulated period of time in their wallets. MyGrapheneChain will take some shares of bonus to reward the participants.
+Loyalty plan, aiming to encourage RUI holders to hold RUI in the long term. Participants are required to lock certain amount of RUI for a stipulated period of time in their wallets. MyGChain will take some shares of bonus to reward the participants.
 
 After RUI is transferred to the wallet, at RUI home page (Click “Account” in the top navigating column of the wallet to go back to the home page), click RUI column then click 【Join in loyalty plan】, shown as the following picture：![](/assets/loyalty.jpg)
 
@@ -289,14 +289,14 @@ After determining the period, enter the RUI amount you want to lock in the 【Lo
 
 ![](/assets/loyalty2.jpg) Aftering setting the period and locking amount, click the black button 【Join in loyalty plan】 to submit. You will receive a locking reminder——The amount joining in the loyalty plan will be locked and cannot be sold during the plan term.
 
-![](/assets/loyalty3.jpg)**Once you confirm to join in the plan, no one has the permission to unlock and release the RUI amount in the plan no matter it is you or MyGrapheneChain project. Thus, before confirming to join in the loyalty plan, please carefully plan your budget.**
+![](/assets/loyalty3.jpg)**Once you confirm to join in the plan, no one has the permission to unlock and release the RUI amount in the plan no matter it is you or MyGChain project. Thus, before confirming to join in the loyalty plan, please carefully plan your budget.**
 
 After clicking confirm to join in, you are required to enter your wallet password to finish the authorization to the locking operation.
 
 If you want to check the status you are in the plan, you can click 【Balance to be unlocked】 at the lower left side to see the amount you put in the plan and the time period of your plan (shown in the following picture).
 
-![](/assets/loyalty4.jpg)Up till now, the loyalty plan has been launched to the webpage wallet and new verison wallet client of MyGrapheneChain.
+![](/assets/loyalty4.jpg)Up till now, the loyalty plan has been launched to the webpage wallet and new verison wallet client of MyGChain.
 
-As to the newest version of the wallet client, after visiting MyGrapheneChain official website [www.rui.io](/www.rui.io) click 【Download wallet】 to download the new version wallet file, and reinstall to use (No need to delete the orginal client and import the wallet again).
+As to the newest version of the wallet client, after visiting MyGChain official website [www.rui.io](/www.rui.io) click 【Download wallet】 to download the new version wallet file, and reinstall to use (No need to delete the orginal client and import the wallet again).
 
 \*When using the wallet, please back up wallet files and the private key, which is the core proof to show your ownership; what's more, when using webpage wallet, we strongly recommend users to access and use webpage wallet on their computers instead of cellphones, since the cellphone surfer is very easy to remove the wallet when it clears the caches，in which case you need to import wallet back up files or the private key again to continue using the wallet.

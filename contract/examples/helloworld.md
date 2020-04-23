@@ -1,6 +1,6 @@
 # 第一个智能合约程序 helloworld
 
-## 1. [源代码](https://github.com/rui-coin/rui-core/blob/contract/contracts/examples/helloworld/helloworld.cpp)
+## 1. [源代码](https://github.com/rui-coin/core/blob/contract/contracts/examples/helloworld/helloworld.cpp)
 
 helloworld的源代码也可以用dxx模板进行生成:
 

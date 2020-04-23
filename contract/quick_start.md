@@ -1,8 +1,8 @@
 # 快速开始
 
-可以本地编译搭建MyGrapheneChain私链，通过命令行方式编译、部署、调用智能合约。
+可以本地编译搭建MyGChain私链，通过命令行方式编译、部署、调用智能合约。
 
-* [编译安装MyGrapheneChain](../node/install.md)
+* [编译安装MyGChain](../node/install.md)
 
 * [搭建私链](../node/private-chain.md)
 

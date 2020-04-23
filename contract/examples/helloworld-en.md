@@ -1,6 +1,6 @@
 # The first smart contract program helloworld
 
-## 1. [Source code](https://github.com/rui-coin/rui-core/blob/contract/contracts/examples/helloworld/helloworld.cpp)
+## 1. [Source code](https://github.com/rui-coin/core/blob/contract/contracts/examples/helloworld/helloworld.cpp)
 
 The source code of helloworld can also be generated utilizing the dxx mode:
 

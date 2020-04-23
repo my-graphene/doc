@@ -1,6 +1,6 @@
 # This contract is used to call the hi method of helloworld
 
-## 1. [Source code](https://github.com/rui-coin/rui-core/blob/contract/contracts/examples/call-helloworld/call-helloworld.cpp)
+## 1. [Source code](https://github.com/rui-coin/core/blob/contract/contracts/examples/call-helloworld/call-helloworld.cpp)
 
 The code is as follows:
 ```

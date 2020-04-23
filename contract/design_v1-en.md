@@ -193,7 +193,7 @@ Offer withdraw_asset method to the API enveloped by the virtual machine，which 
 
 
 3. Transferring contract sample supporting charing and withdrawing：
-https://github.com/rui-coin/rui-core/tree/dev_master/contracts/examples/transfer
+https://github.com/rui-coin/core/tree/dev_master/contracts/examples/transfer
 
 
 

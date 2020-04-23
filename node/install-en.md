@@ -1,4 +1,4 @@
-# Source code compiles and installs MyGrapheneChain
+# Source code compiles and installs MyGChain
 
 ## Environment request
 * System: Ubuntu 16.04 LTS 64-bit, 4.4.0-63-generic kernel or above
@@ -7,7 +7,7 @@
 
 ## Install dependence
 
-* MyGrapheneChain smart contract needs the support from clang compiler;
+* MyGChain smart contract needs the support from clang compiler;
 * openssl's minimum dependence version is 1.0.x;
 * cmake's minimum dependence version is 3.11.0;
 * boost's minimum dependence version is 1.67.0.
@@ -50,10 +50,10 @@ cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=~/opt/wasm -DLLVM_TARGETS_TO_BU
 make -j4 install
 ```
 
-## Compile MyGrapheneChain
+## Compile MyGChain
 ```
-git clone https://github.com/rui-coin/rui-core
-cd rui-core
+git clone https://github.com/rui-coin/core
+cd core
 git checkout contract
 git submodule update --init --recursive
 

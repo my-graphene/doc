@@ -1,4 +1,4 @@
-MyGrapheneChain smart contract database operation
+MyGChain smart contract database operation
 
 ---------------
 

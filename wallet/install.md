@@ -1,13 +1,13 @@
 
 
 
-# rui-ui介绍
+# ui介绍
 
-MyGrapheneChain数据交易客户端rui-ui是基于Nodejs开发的一个部署在商户和数据源本地的客户端，商户和数据源可以通过本地调用的方式购买和出售数据，数据交易的全程请求参数和回传数据都是经过加密处理的，而rui-ui简化了这样的一个流程。
+MyGChain数据交易客户端ui是基于Nodejs开发的一个部署在商户和数据源本地的客户端，商户和数据源可以通过本地调用的方式购买和出售数据，数据交易的全程请求参数和回传数据都是经过加密处理的，而ui简化了这样的一个流程。
 
 # 环境安装
 
-rui-ui基于Nodejs开发，执行环境为Ubuntu16.04。rui-ui需要安装Nodejs8.0以上版本.
+ui基于Nodejs开发，执行环境为Ubuntu16.04。ui需要安装Nodejs8.0以上版本.
 
 ## 安装nodejs
 
@@ -35,8 +35,8 @@ npm i -g yarn
 
 ## 下载及安装依赖包
 ```
-git clone https://github.com/rui-coin/rui-ui
-cd rui-ui
+git clone https://github.com/rui-coin/ui
+cd ui
 yarn
 ```
 
@@ -44,7 +44,7 @@ yarn
 ## 修改服务节点
 
 ```
-vim rui-ui/app/api/apiConfig.js
+vim ui/app/api/apiConfig.js
 ```
 
 ```

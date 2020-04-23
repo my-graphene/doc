@@ -1,13 +1,13 @@
 
 
 
-# rui-ui introduction
+# ui introduction
 
-MyGrapheneChain data transaction client, rui-ui, is a client deployed on merchants and local data source and developed based on Nodejs, so merchants and data source could sell and buy their data by local call, and the the whole-process parameter of data transaction as well as the replying data are encrypted, which is however simplied by rui-ui.
+MyGChain data transaction client, ui, is a client deployed on merchants and local data source and developed based on Nodejs, so merchants and data source could sell and buy their data by local call, and the the whole-process parameter of data transaction as well as the replying data are encrypted, which is however simplied by ui.
 
 # Installment environment
 
-rui-ui is developed based onNodejs, and its execution evironment is Ubuntu16.04. rui-ui needs to install Nodejs8.0 or the above version.
+ui is developed based onNodejs, and its execution evironment is Ubuntu16.04. ui needs to install Nodejs8.0 or the above version.
 
 ## Install nodejs
 
@@ -35,8 +35,8 @@ npm i -g yarn
 
 ## Download and install dependence package
 ```
-git clone https://github.com/rui-coin/rui-ui
-cd rui-ui
+git clone https://github.com/rui-coin/ui
+cd ui
 yarn
 ```
 
@@ -44,7 +44,7 @@ yarn
 ## Modify the service node
 
 ```
-vim rui-ui/app/api/apiConfig.js
+vim ui/app/api/apiConfig.js
 ```
 
 ```

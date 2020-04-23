@@ -1,5 +1,5 @@
 # Consensus mechanism introduction
 
-## Consensus mechanism of MyGrapheneChain
+## Consensus mechanism of MyGChain
 
-Consensus algebra of MyGrapheneChain is Data Delegated Proof of Stake (DDPoS).
+Consensus algebra of MyGChain is Data Delegated Proof of Stake (DDPoS).

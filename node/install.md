@@ -1,6 +1,6 @@
-# 源码编译安装MyGrapheneChain
+# 源码编译安装MyGChain
 
-MyGrapheneChain见证节点`witness_node`和命令行钱包`cli_wallet`都是通过源码编译安装来完成的。
+MyGChain见证节点`witness_node`和命令行钱包`cli_wallet`都是通过源码编译安装来完成的。
 
 ## 环境要求
 * 系统: Ubuntu 16.04 LTS 64-bit, 4.4.0-63-generic 内核或更高
@@ -9,7 +9,7 @@ MyGrapheneChain见证节点`witness_node`和命令行钱包`cli_wallet`都是通
 
 ## 依赖安装
 
-* MyGrapheneChain智能合约需要clang编译器支持；
+* MyGChain智能合约需要clang编译器支持；
 * openssl最低依赖版本1.0.x ; 
 * cmake最低依赖版本3.11.0；
 * boost最低依赖版本1.67.0。
@@ -56,8 +56,8 @@ make -j4 install
 
 ## 编译安装
 ```
-git clone https://github.com/rui-coin/rui-core
-cd rui-core
+git clone https://github.com/rui-coin/core
+cd core
 git submodule update --init --recursive
 
 

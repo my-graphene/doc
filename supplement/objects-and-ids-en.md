@@ -1,10 +1,10 @@
 # Object and ID
 
-Compared to other cryptocurrency wallets, the model of MyGrapheneChain, transaction and account type shown on MyGrapheneChain is quite different.
+Compared to other cryptocurrency wallets, the model of MyGChain, transaction and account type shown on MyGChain is quite different.
 
 ## Object
 
-Objects do not have address on MyGrapheneChain, but they can match with corresponding identification code.
+Objects do not have address on MyGChain, but they can match with corresponding identification code.
 
 | space.type.id |
 | :--- |

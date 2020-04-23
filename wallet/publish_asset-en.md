@@ -1,6 +1,6 @@
 # Create asset
 
-1. #### Access [MyGrapheneChain webpage wallet](https://wallet.rui.io)，import the private key
+1. #### Access [MyGChain webpage wallet](https://wallet.rui.io)，import the private key
 2. #### Create asset as the following graph
 
 #### ![](/assets/create_asset1.png)

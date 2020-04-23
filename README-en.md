@@ -1,16 +1,16 @@
-# MyGrapheneChain document
+# MyGChain document
 
-## MyGrapheneChain introduction
+## MyGChain introduction
 
-MyGrapheneChain is a public chain, which is the basement blockchain of the MyGrapheneChain data exchange, supports not only the data transaction on MyGrapheneChain in high frequency, but also the application development by the third party. Developing applications can get not only the support on the chain, but also the coordination of MyGrapheneChain data in multiple dimmesions, which can help to develop valuable applications for people's life.
+MyGChain is a public chain, which is the basement blockchain of the MyGChain data exchange, supports not only the data transaction on MyGChain in high frequency, but also the application development by the third party. Developing applications can get not only the support on the chain, but also the coordination of MyGChain data in multiple dimmesions, which can help to develop valuable applications for people's life.
 
-MyGrapheneChain main net has been launched since June 2018.
+MyGChain main net has been launched since June 2018.
 
 
-## MyGrapheneChain Technical document
+## MyGChain Technical document
 
 ### Quick start
-* [MyGrapheneChain composition](introduction-en.md)
+* [MyGChain composition](introduction-en.md)
 * [Compilation installment](node/install-en.md)
 * [Establilsh private chain](node/private-chain-en.md)
 * [Light weighted wallet](node/cli_wallet-en.md)

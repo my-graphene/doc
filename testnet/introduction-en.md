@@ -1,6 +1,6 @@
 # Testnet
 
-MyGrapheneChain official testnet accessing node：13.57.136.245
+MyGChain official testnet accessing node：13.57.136.245
 
 ## 1. Testnet configuration
 
