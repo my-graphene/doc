@@ -1,6 +1,6 @@
 # API测试例子
 
-## 1. [源代码](https://github.com/rui-coin/core/blob/contract/contracts/examples/apitest/apitest.cpp)
+## 1. [源代码](https://github.com/my-graphene/core/blob/contract/contracts/examples/apitest/apitest.cpp)
 
 
 代码如下:

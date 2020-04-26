@@ -1,20 +1,27 @@
-# Source code compiles and installs MyGChain
+# 源码编译安装MyGChain
 
-## Environment request
-* System: Ubuntu 16.04 LTS 64-bit, 4.4.0-63-generic kernel or above
-* RAM: 8GB+
-* Hard drive: 100GB+
+[TOC]
 
-## Install dependence
+MyGChain见证节点`witness_node`和命令行钱包`cli_wallet`都是通过源码编译安装来完成的。
 
-* MyGChain smart contract needs the support from clang compiler;
-* openssl's minimum dependence version is 1.0.x;
-* cmake's minimum dependence version is 3.11.0;
-* boost's minimum dependence version is 1.67.0.
+## 1. 环境要求
 
-## Install dependence packet
+* 系统: Ubuntu 16.04 LTS 64-bit, 4.4.0-63-generic 内核或更高
+* 内存: 8GB+
+* 硬盘: 100GB+
 
-```
+## 2. 依赖安装
+
+* MyGChain智能合约需要clang编译器支持；
+* openssl最低依赖版本1.0.x ;
+* cmake最低依赖版本3.11.0；
+* boost最低依赖版本1.67.0。
+
+注: 以下操作，加入您已经获取了root权限。
+
+## 3. 安装依赖包
+
+```bast
 apt update
 apt -y install software-properties-common
 apt-add-repository "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-4.0 main"
@@ -23,24 +30,27 @@ apt update
 apt -y install clang-4.0 lldb-4.0 libclang-4.0-dev wget make python-dev libbz2-dev libdb++-dev libdb-dev libssl-dev openssl libreadline-dev autoconf libtool git ntp doxygen libc++-dev cmake  g++ libcurl4-openssl-dev unixodbc-dev libjsoncpp-dev uuid-dev build-essential libstdc++-7-dev
 ```
 
-## Install cmake
-```
+## 4. 安装cmake
+
+```bash
 cd && wget https://cmake.org/files/v3.11/cmake-3.11.0-Linux-x86_64.sh
 mkdir -p /opt/cmake && chmod +x ~/cmake-3.11.0-Linux-x86_64.sh
 bash ~/cmake-3.11.0-Linux-x86_64.sh --prefix=/opt/cmake --skip-license
 ln -sfT /opt/cmake/bin/cmake /usr/local/bin/cmake
 ```
 
-## Install boost 1.67
-```
+## 5. 安装 boost 1.67
+
+```bash
 wget https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz -O  boost_1_67_0.tar.gz
 tar -zxvf boost_1_67_0.tar.gz && cd boost_1_67_0 && chmod +x bootstrap.sh
 ./bootstrap.sh --prefix=/usr
 ./b2 --buildtype=complete install
 ```
 
-## Install llvm
-```
+## 6. 安装llvm
+
+```bash
 mkdir  ~/wasm-compiler && cd ~/wasm-compiler
 git clone --depth 1 --single-branch --branch release_40 https://github.com/llvm-mirror/llvm.git
 cd llvm/tools
@@ -50,11 +60,11 @@ cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=~/opt/wasm -DLLVM_TARGETS_TO_BU
 make -j4 install
 ```
 
-## Compile MyGChain
-```
-git clone https://github.com/rui-coin/core
+## 7. 编译安装
+
+```bash
+git clone https://github.com/my-graphene/core
 cd core
-git checkout contract
 git submodule update --init --recursive
 
 

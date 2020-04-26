@@ -1,24 +1,25 @@
 # 私有链搭建
 
+[TOC]
+
 ## 1. witness_node操作 —— 启动链
 
 ### 1.1 创建和编辑初始文件
 
 初始文件是用来定义区块链网络初始状态，如下：
+
 * 修改初始文件中账户， 以及账户名和公钥
 * 区块链资产和初次分发（包含核心资产）
 * 私链参数的最初基准（包括费用）
 * 初始见证人的账户签名秘钥
 
-
 创建一个名为`my-genesis.json`的初始文件：
 
-```
-$ witness_node --create-genesis-json my-genesis.json
+```bash
+witness_node --create-genesis-json my-genesis.json
 ```
 
-石墨烯系统中默认的初始化块中包含唯一一个账户`nathan`，创世区块中的所有见证人、理事会成员和基金会都是该账户。 
-
+石墨烯系统中默认的初始化块中包含唯一一个账户`nathan`，创世区块中的所有见证人、理事会成员和基金会都是该账户。
 
 #### eg.1 修改`nathan`私钥
 
@@ -27,18 +28,17 @@ $ witness_node --create-genesis-json my-genesis.json
 
 通过手动修改初始文件对私钥进行修改。
 
-
 #### eg.2 修改活跃见证人更新时间
-```
+
+```json
 "maintenance_interval": 600
 ```
-
 
 ### 1.2 初始化证人节点，获取链ID
 
 链ID是初始状态的哈希值。它用来区分不同的链。
 
-```
+```bash
 witness_node --genesis-json my-genesis.json
 ```
 
@@ -46,7 +46,7 @@ witness_node --genesis-json my-genesis.json
 
 出现如下信息，代表初始化已经完成，按`ctrl-c` 关闭见证人节点:
 
-```
+```json
 3501235ms th_a main.cpp:165 main] Started witness node on a chain with 0 blocks.
 3501235ms th_a main.cpp:166 main] Chain ID is 6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
 ```
@@ -59,7 +59,7 @@ witness_node --genesis-json my-genesis.json
 
 编辑`witness_node_data_dir/config.ini`修改配置：
 
-```
+```ini
 p2p-endpoint = 0.0.0.0:31010
 seed-nodes = []
 rpc-endpoint = 0.0.0.0:38090
@@ -82,7 +82,7 @@ witness-id = "1.6.11"
 
 上述列表授权了见证人节点用见证人ID来生成区块. 正常情况下，每个见证人的节点不同，但在私有链中，我们会先设定成全体见证人在同一个节点生产区块。这些见证人ID的私钥（用来签署区块）已经在`config.ini`中提供：
 
-```
+```ini
 # Tuple of [PublicKey, WIF private key] (may specify multiple times)
 private-key = ["RUI6MRyA...T5GDW5CV","5KQwrPb...tP79zkvFD3"]
 ```
@@ -97,16 +97,15 @@ private-key = ["RUI6MRyA...T5GDW5CV","5KQwrPb...tP79zkvFD3"]
 点。当连接已有区块链网络时，尽可能多的设置种子节点以加快同步速度。
 * `witness-id`  用于授权本证人节点所代表的证人id产生区块，可指定多个。一般来说一个证人节点授权一个证人id，私链第一个节点指定了11个。
 
-
 ### 1.4 开始生产区块
 
-```
+```bash
 witness_node
 ```
 
 之后私链的区块将开始生成，你会看到如下指示:
 
-```
+```text
 ********************************
 *                              *
 *   ------- NEW CHAIN ------   *
@@ -124,7 +123,7 @@ witness_node
 
 如果witness.log无日志生成，可以将日志打印打控制台，可以修改`config.ini`文件如下，然后重新启动witness。
 
-```
+```ini
 [logger.default]
 level=debug
 appenders=stderr
@@ -135,26 +134,27 @@ appenders=stderr
 ### 2.1 创建新钱包
 
 钱包用来保存账户的私钥，此处创建的钱包名称为`my-wallet.json`。
-```
+
+```bash
 cli_wallet -w my-wallet.json -s ws://127.0.0.1:38090 --chain-id 6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
 ```
 
 如下提示，意味着你的客户端已经成功匹配见证人节点。
-```
-1987712ms th_a       main.cpp:136                  main                 ] key_to_wif( committee_private_key ): 5KCBDTcyDqzsqehcb52tW5nU6pXife6V2rX9Yf7c3saYSzbDZ5W 
-1987713ms th_a       main.cpp:140                  main                 ] nathan_pub_key: RUI6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV 
-1987713ms th_a       main.cpp:141                  main                 ] key_to_wif( nathan_private_key ): 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3 
+
+```text
+1987712ms th_a       main.cpp:136                  main                 ] key_to_wif( committee_private_key ): 5KCBDTcyDqzsqehcb52tW5nU6pXife6V2rX9Yf7c3saYSzbDZ5W
+1987713ms th_a       main.cpp:140                  main                 ] nathan_pub_key: RUI6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+1987713ms th_a       main.cpp:141                  main                 ] key_to_wif( nathan_private_key ): 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 Starting a new wallet with chain ID 6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d (from CLI)
-1987714ms th_a       main.cpp:188                  main                 ] wdata.ws_server: ws://127.0.0.1:38090 
+1987714ms th_a       main.cpp:188                  main                 ] wdata.ws_server: ws://127.0.0.1:38090
 1987717ms th_a       main.cpp:193                  main                 ] wdata.ws_user:  wdata.ws_password:  
 Please use the set_password method to initialize a new wallet before continuing
 new >>>
 ```
 
-
 使用钱包钱，需要为钱包设置密码，此处为`supersecret`：
 
-```
+```js
 new >>> set_password supersecret
 set_password supersecret
 null
@@ -163,13 +163,12 @@ locked >>>
 
 钱包解锁后，才能使用。解锁钱包：
 
-```
+```js
 locked >>> unlock supersecret  
 unlock supersecret
 null
-unlocked >>> 
+unlocked >>>
 ```
-
 
 ### 2.2 导入nathan账户
 
@@ -177,23 +176,21 @@ unlocked >>>
 
 账户保存进钱包需要导入私钥，以下导入`nathan`账户：
 
-```
+```bash
 import_key nathan 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 ```
 
 ### 2.3 将链上资产赋给nathan账户
 
-
 将初始文件中设置链上资产RUI赋给`nathan`：
 
-```
+```bash
 import_balance nathan ["5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"] true
 ```
 
 此时可查看账户余额：
 
-
-```
+```bash
 list_account_balances nathan
 ```
 
@@ -208,23 +205,23 @@ list_account_balances nathan
 
 此处升级`nathan`为终身会员。
 
-```
+```bash
 upgrade_account nathan true
 ```
 
 重启客户端，否则将无法识别`nathan`已经成功升级。通过`ctrl-c`停止客户端。
 
-```
+```bash
 cli_wallet -w my-wallet.json -s ws://127.0.0.1:38090 --chain-id 6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
 ```
 
 查看账户属性
-```
+
+```bash
 get_account nathan
 ```
 
 `membership_expiration_date`的属性值应该是`1969-12-31T23:59:59`，代表成功升级。
-
 
 ### 2.5 注册新账户alpha
 
@@ -232,26 +229,25 @@ get_account nathan
 
 生成公私钥对：
 
-```
+```bash
 suggest_brain_key
 ```
 
 注册新账户alpha
 
-```
+```bash
 register_account alpha RUI6vQtDEgHSickqe9itW8fbFyUrKZK5xsg4FRHzQZ7hStaWqEKhZ RUI6vQtDEgHSickqe9itW8fbFyUrKZK5xsg4FRHzQZ7hStaWqEKhZ nathan nathan 0 true
 ```
 
-
 ### 2.6 nathan转账给alpha
 
-```
+```bash
 transfer nathan alpha 1 RUI "" true
 ```
 
 查看nathan余额：
 
-```
+```bash
 list_account_balances alpha
 ```
 
